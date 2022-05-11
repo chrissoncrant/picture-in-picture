@@ -1,3 +1,9 @@
+:root {
+    --purple: #550527;
+    --white: #FDFFFC;
+    --gray: #8f899e;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -5,11 +11,33 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
 }
 
 button {
+    appearance: none;
     display: block;
     margin: auto;
-    width: 150px;
-    height: 50px;
+    padding: 20px 75px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: var(--white);
+    border: 2px solid var(--purple);
+    border-radius: 15px;
+    font-size: 36px;
+    cursor: pointer;
+    box-shadow: 0 0 40px 40px var(--purple) inset, 0 0 0 0 var(--purple);
+    transition: all 150ms ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0 var(--purple) inset, 0 0 10px 4px var(--purple);
+}
+
+button:active {
+    color: var(--purple);
+    box-shadow: 0 0 10px 0 var(--purple) inset, 0 0 10px 1px var(--purple);
 }
