@@ -19,7 +19,7 @@ async function selectMediaStream(displayMediaOptions) {
 
 }
 
-// selectMediaStream();
+selectMediaStream();
 
 button.addEventListener('click', async () => {
     button.disabled = true;
