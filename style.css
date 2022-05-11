@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
     --purple: #550527;
     --white: #FDFFFC;
@@ -6,6 +8,7 @@
 
 html {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -14,13 +17,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: var(--gray);
+}
+
+video {
+    border-radius: 15px;
 }
 
 button {
     appearance: none;
     display: block;
-    margin: auto;
+    margin-top: 25px;
     padding: 20px 75px;
     background-color: transparent;
     text-transform: uppercase;
@@ -28,6 +36,7 @@ button {
     border: 2px solid var(--purple);
     border-radius: 15px;
     font-size: 36px;
+    font-family: 'Press Start 2P', cursive;
     cursor: pointer;
     box-shadow: 0 0 40px 40px var(--purple) inset, 0 0 0 0 var(--purple);
     transition: all 150ms ease-in-out;
